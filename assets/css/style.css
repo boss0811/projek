@@ -46,16 +46,60 @@ body{
     float:right;
 }
 
-#container{
-    margin:20px 20px 80px 20px;
+#nav {    
+    /*border: 1px solid red;*/
 }
 
-#container ul li{
-    list-style: none;
+#nav .welcome {
+    width:20%;
     display:inline-block;
+    /*border: 1px solid blue;*/
+}
+
+#nav .navigation {
+    width:79%;
+    display:inline-block;
+    text-align:right;
+    /*border: 1px solid green;*/
+}
+
+#nav .navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav .navigation ul li {
+    list-style: none;
+    display:inline-block;    
+    margin-right: 3%;    
+    /*border: 1px solid orange;*/
+}
+
+#nav .navigation a {
+    display: inline-block;
     font-size: 24px;
     color:#006699;
-    padding-right: 5%;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#nav .navigation ul li a:visited{
+    color:#006699;
+    text-decoration: none;
+}
+
+#nav .navigation ul li:hover {
+    color:white;
+    background-color: #006699;
+    cursor: pointer;
+}
+
+#nav .navigation ul li:hover a {
+    color:white;
+}
+
+#container{
+    margin:20px 20px 80px 20px;
 }
 
 #binus{
@@ -75,21 +119,6 @@ body{
     margin-left:20px;
     display: inline-block;
     text-align: left;
-}
-
-a:visited{
-    color:#006699;
-    text-decoration: none;
-}
-
-a:hover{
-    color:white;
-    background-color: #006699;
-}
-
-a{
-    color:#006699;
-    text-decoration: none;
 }
 
 #eror{
@@ -228,4 +257,8 @@ a{
         color:#006699;
         padding-right: 5%;
     }
+}
+
+.clearfix {
+    clear: both;
 }
