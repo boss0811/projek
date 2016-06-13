@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bluejack Learning Center - Registration</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="header">
+            <img style="width:19%;float:left" src="image/Blueprint--Discussionsssss_01.gif">
+            <img style="width:80%;float:right" src="image/Blueprint--Discussionsssss_03.gif">
+        </div>
+        <div id="container">
+            <div style="width:100%;height:60px">
+                <div style="width:20%;display:inline-block;float:left">
+                    <p style="display:inline-block;font-size:20px;color:#006699">Welcome,</p><p style="color:#006699;font-weight:bold;display:inline-block;font-size:20px">GUEST</p>
+                </div>
+                <div style="width:79%;display:inline-block;float:right;text-align:right">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="discussion.html">DISCUSSION</a></li>
+                        <li><a href="registration.html">REGISTRATION</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main" style="width:100%;margin-left:0;margin-right:0;margin-top:20px;margin-bottom:20px">
+                <div id="discuss1">
+                    <div id="judul">C's DISCUSSION</div>
+                    <div id="contain1">
+                        <div id="subcontain1">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[TUTORIAL] How To Code C Easily</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Ivan Santoso</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 1,009 views</div>
+                            </div>
+                        </div>
+                        <div id="subcontain1">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[HELP] Stuck in Coding!</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Chrisriandi Indra</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 849 views</div>
+                            </div>
+                        </div>
+                        <div id="subcontain1">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[ASK] How To Fix This?</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Oliver Biano</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 821 views</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="discuss2">
+                    <div id="judul">JAVA's DISCUSSION</div>
+                    <div id="contain2">
+                        <div id="subcontain2">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[TUTORIAL] How To Code C Easily</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Ivan Santoso</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 1,009 views</div>
+                            </div>
+                        </div>
+                        <div id="subcontain2">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[TUTORIAL] Java for Experts</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Samuel Gunawan</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 996 views</div>
+                            </div>
+                        </div>
+                        <div id="subcontain2">
+                            <div style="width:15%;display:inline-block"><img style="width:100%" src="image/male3-512.png"></div>
+                            <div style="width:84%;display:inline-block;float:right"><a id="subjudul" href="#">[HELP] Java Stop Responding T_T</a>
+                                <div style="width:84%;color:black;font-size:20px">Started By: Dana Ilham</div>
+                                <div style="width:84%;color:black;font-size:20px">Viewed: 598 views</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <img style="width:100%" src="image/Blueprint--Discussionsssss_13.gif">
+        </footer>
+        
+        
+
+        <script type="text/javascript">
+            var slideWidth=$('#slider').width();
+            var slideHeight=$('#slider').height();
+            var numberofimages=$('.slide').length;
+            console.log($('#asd').width());
+            console.log($('#asd').height());
+            $('.slides').width(slideWidth * numberofimages);
+            $('.slide').width(slideWidth);
+            $('.slide').height(slideWidth);
+            $('.slides').css('marginLeft',-slideWidth);
+
+            $('#left').click(function(){
+                $('.slides').animate({left: slideWidth}, 1000, function(){
+                    $('.slide:last-child').prependTo('.slides');
+                    $('.slides').css('left','');
+                });
+            });
+
+
+            $('#right').click(function(){
+                $('.slides').animate({left: -slideWidth}, 1000, function(){
+                    $('.slide:first-child').appendTo('.slides');
+                    $('.slides').css('left','');
+                });
+            });
+            //console.log(slideWidth);
+            //console.log(slideHeight);
+            //console.log(numberofimages);
+        </script>
+    </body>
+    
+</html>

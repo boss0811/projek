@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bluejack Learning Center - Registration</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="header">
+            <img style="width:19%;float:left" src="image/Blueprint--Discussionsssss_01.gif">
+            <img style="width:80%;float:right" src="image/Blueprint--Discussionsssss_03.gif">
+        </div>
+        <div id="container">
+            <div style="width:100%;height:60px">
+                <div style="width:20%;display:inline-block;float:left">
+                    <p style="display:inline-block;font-size:20px;color:#006699">Welcome,</p><p style="color:#006699;font-weight:bold;display:inline-block;font-size:20px">GUEST</p>
+                </div>
+                <div style="width:79%;display:inline-block;float:right;text-align:right">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li>
+                            <a href>COURSE</a>
+                            <!-- <ul id="dropdown">
+                                <li>Course 1</li>
+                                <li>Course 1</li>
+                            </ul> -->
+                        </li>
+                        <li><a href="discussion.html">DISCUSSION</a></li>
+                        <li><a href="registration.html">REGISTRATION</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main" style="width:100%;margin-left:0;margin-right:0;margin-top:20px;margin-bottom:20px">
+                <form id="regis">
+                    <div style="margin-left:0;width:50%;float:left;display:inline-block;padding-left:30px;">
+                            <img style="width:85px;float:left;display:inline-block" src="image/logo_design_4367.png"><h1 style="font-size:30px;height:75px;width:70%;margin:0;vertical-align:middle;line-height:75px;color:#006699;display:inline-block">REGISTRATION PAGE</h1>
+                            <table style="width:70%;font-size:30px;color:#006699">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>:</td>
+                                    <td><input type="text" id="name" name="name" style="height:30px;font-size:24px;border-radius:10px;background-color:#e6e6e6" size="35"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>:</td>
+                                    <td><input type="text" id="email" name="email" style="height:30px;font-size:24px;border-radius:10px;background-color:#e6e6e6" size="35"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>:</td>
+                                    <td><input type="text" id="password" name="password" style="height:30px;font-size:24px;border-radius:10px;background-color:#e6e6e6" size="35"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Re-type</td>
+                                    <td>:</td>
+                                    <td><input type="text" id="repassword" name="repassword" style="height:30px;font-size:24px;border-radius:10px;background-color:#e6e6e6" size="35"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>:</td>
+                                    <td><input type="text" id="address" name="address" style="height:30px;font-size:24px;border-radius:10px;background-color:#e6e6e6" size="35"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>:</td>
+                                    <td style="color:black"><input type="radio" name="gender" value="male" id="male">Male
+                                        <input type="radio" name="gender" value="female" id="female">Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>:</td>
+                                    <td>
+                                        <select id="country" style="height:30px;width:70%;font-size:24px;border-radius:10px;background-color:#e6e6e6">
+                                            <option value="0">Choose your country</option>
+                                            <option value="indonesia">Indonesia</option>
+                                            <option value="arab">Arab</option>
+                                            <option value="argentina">Argentina</option>
+                                            <option value="rusia">Rusia</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        
+                    </div>
+                    <div id="term">
+                        <div>
+                            <img style="width:100%" src="image/Blueprint-Registrationssss_04.jpg">
+                        </div>
+                        <input type="checkbox" id="check">I agree with the terms and conditions<br><br>
+                        <input style="height:40px;font-size:24px;border-radius:10px;background-color:#99ccff" size="35" type="button" value="Submit" onClick="isClicked()">
+                        <input style="height:40px;font-size:24px;border-radius:10px;background-color:#ff8080" size="35" type="reset" value="Reset" onclick="clicked()">
+                        <label id="eror"></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <img style="width:100%" src="image/Blueprint--Discussionsssss_13.gif">
+        </footer>
+        
+        
+
+        <script type="text/javascript">
+            var eror=document.getElementById('eror');
+            
+            function clicked(){
+                eror.innerHTML="";
+            }
+
+            function isClicked(){
+                if(!nameVal()){
+                    return false;
+                }
+                else if(!emailVal()){
+                    return false;
+                }
+                else if(!passVal()){
+                    return false;
+                }
+                else if(!repassVal()){
+                    return false;
+                }
+                else if(!addressVal()){
+                    return false;
+                }
+                else if(!genderVal()){
+                    return false;
+                }
+                else if(!countryVal()){
+                    return false;
+                }
+                else if(!checkVal()){
+                    return false;
+                }
+                else{
+                    eror.innerHTML="";
+                    var gender;
+                    if(document.getElementById('male').checked){
+                        gender="Male";
+                    }
+                    else{
+                        gender="Female"
+                    }
+                    var display="Name: "+document.getElementById('name').value+"\n"+
+                                "Email: "+document.getElementById('email').value+"\n"+
+                                "Password: "+document.getElementById('password').value+"\n"+
+                                "Gender: "+gender+"\n"+
+                                "Address: "+document.getElementById('address').value+"\n";
+                    alert("These are your data:\n"+display);
+                    document.getElementById('regis').reset();
+                }
+            }
+
+            function nameVal(){
+                var name=document.getElementById('name').value;
+                if(name.length==0){
+                    eror.innerHTML="Name must not be empty!";
+                    return false;
+                }
+                else if(name.length<5||name.length>20){
+                    eror.innerHTML="Name length must be between 5 and 20!";
+                    return false;
+                }
+                return true;
+            }
+
+            function emailVal(){
+                var email=document.getElementById('email').value;
+                if(email.length==0){
+                    eror.innerHTML="Email must not be empty!";
+                    return false;
+                }
+                else if(email.length<5||email.length>20){
+                    eror.innerHTML="Email length must be between 5 and 20!";
+                    return false;
+                }
+                return true;
+            }
+
+            function countryVal(){
+                var country=document.getElementById('country').selectedIndex;
+                if(country==0){
+                    eror.innerHTML="You have to choose country";
+                    return false;
+                }
+                return true;
+
+            }
+
+            var temp;
+            function passVal(){
+                var pass=document.getElementById('password').value;
+                temp=pass;
+                if(!pass){
+                    eror.innerHTML="Password must not be empty!";
+                    return false;
+                }
+                else if (pass.length<5 || pass.length>10){
+                    eror.innerHTML="Password must be between 5 and 10 characters";
+                    return false;
+                }
+                return true;
+            }
+
+            function repassVal(){
+                var repass=document.getElementById('repassword').value;
+                if(!repass){
+                    eror.innerHTML="Re-type must not be empty!";
+                    return false;
+                }
+                else if (repass.length<5 || repass.length>10){
+                    eror.innerHTML="Re-type must be between 5 and 10 characters";
+                    return false;
+                }
+                else if(temp!=repass){
+                    eror.innerHTML="Password and re-type must same!";
+                    return false;
+                }
+                return true;
+            }
+
+            function genderVal(){
+                var regular=document.getElementById('male').checked;
+                var spec=document.getElementById('female').checked;
+                if(!regular && !spec){
+                    eror.innerHTML="You have to pick the gender!";
+                    return false;
+                }
+                return true;
+            }
+
+            function addressVal(){
+                var address=document.getElementById('address').value;
+                if(address.length==0){
+                    eror.innerHTML="Address must be filled!";
+                    return false;
+                }
+                return true;
+            }
+
+            function checkVal(){
+                var cbox=document.getElementById('check').checked;
+                if(!cbox){
+                    eror.innerHTML="You have to agree with the terms and conditions!";
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+    
+</html>
