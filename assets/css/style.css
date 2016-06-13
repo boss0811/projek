@@ -32,9 +32,18 @@ body{
 }
 
 #header{
-    height:200px;
+    display: inline-block;
     width:100%;
-    margin-bottom: 30px;
+}
+
+#header > #leftHeader {
+    width:19%;
+    float:left;
+}
+
+#header > #rightHeader {
+    width:80%;
+    float:right;
 }
 
 #container{
